@@ -94,8 +94,7 @@ if ( ! function_exists('domains_determine_uri'))
  *
  */
 $domains['environment'] = 'prefix';
-$domains['uri'] = domains_determine_uri( $domains['environment'] );
-switch( $domains['uri'] )
+switch( domains_determine_uri( $domains['environment'] ) )
 {
 	case 'dev':
 		define('ENVIRONMENT', 'development');
