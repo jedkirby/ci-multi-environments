@@ -11,9 +11,10 @@
  */
 if ( ! function_exists('domains_determine_uri'))
 {
-	function domains_determine_uri($domain_environment)
+	function domains_determine_uri($domain_environment = 'prefix')
 	{
 
+		$domain_environment = strtolower($domain_environment);
 		$http_host = (isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : FALSE);
 		$http_split = ($http_host ? explode('.', $http_host) : FALSE);
 		if( $http_host && $domain_environment === 'prefix' ) {
@@ -21,6 +22,9 @@ if ( ! function_exists('domains_determine_uri'))
 		}
 		elseif( $http_host && $domain_environment === 'suffix' ) {
 			$domain_uri = end($http_split);
+		}
+		else {
+			exit('The domain environment has not been set correctly, please use either prefix or suffix.');
 		}
 		return ($domain_uri ? $domain_uri : FALSE);
 
