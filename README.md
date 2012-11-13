@@ -16,7 +16,7 @@ CodeIgniter version 2.1.3
 
 
 ## Help
-For more information, please visit http://jedkirby.com/blog/codeigniter-multiple-development-environments
+For more information, please visit http://jedkirby.com/blog/2012/11/codeigniter-multiple-development-environments
 
 
 ## License
@@ -33,3 +33,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Changelog
 v0.1 (2012-11-09) Release
+v0.2 (2012-11-13) Optimization

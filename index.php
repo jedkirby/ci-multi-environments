@@ -26,7 +26,7 @@ if ( ! function_exists('domains_determine_uri'))
 			default:
 				exit('The domain environment has not been set correctly, please use either prefix or suffix.');	
 		}
-		return ($domain_uri ? $domain_uri : FALSE);
+		return (isset($domain_uri) ? $domain_uri : FALSE);
 	}
 }
 
@@ -92,7 +92,7 @@ if ( ! function_exists('domains_determine_uri'))
  *
  * For further help with this please visit:
  * 
- * http://jedkirby.com/blog/codeigniter-multiple-development-environments
+ * http://jedkirby.com/blog/2012/11/codeigniter-multiple-development-environments
  *
  *
  */
