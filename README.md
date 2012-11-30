@@ -1,7 +1,7 @@
 # CodeIgniter Multiple Development Environments
 ### This multiple development environments module allows you to run your CodeIgniter (CI) install across multiple environments without the need to modify configurations each time you want to test. Built by [@jedkirby](http://twitter.com/jedkirby).
 
-The multiple environmet modules works buy giving you an option to use prefixed or suffixed urls to determine the environment [System and Application] settings to be used. That enables you to have an unlimited amount of configurations depending on your situation.
+The multiple environment modules works buy giving you an option to use prefixed or suffixed urls to determine the environment [System and Application] settings to be used. That enables you to have an unlimited amount of configurations depending on your situation.
 
 
 ## Basic Usage
