@@ -100,15 +100,17 @@ $domains['environment'] = 'prefix';
 switch( domains_determine_uri( $domains['environment'] ) )
 {
 	case 'dev':
+	case 'local':
 		define('ENVIRONMENT', 'development');
 			$system_path = 'system';
 			$application_folder = 'application';
-			break;
+        break;
 	case 'stage':
+	case 'staging':
 		define('ENVIRONMENT', 'staging');
 			$system_path = 'system';
 			$application_folder = 'application';
-			break;		
+        break;		
 	default:
 		define('ENVIRONMENT', 'production');
 			$system_path = 'system';
